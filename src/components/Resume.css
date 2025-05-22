@@ -1,0 +1,135 @@
+/* src/components/Resume.css */
+.resume-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #000014, #05002e);
+  color: white;
+  min-height: 100vh;
+}
+
+.resume-heading {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #ff66c4;
+  font-weight: bold;
+  text-shadow: 0 0 10px #ff66c4;
+}
+
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding-left: 40px;
+  max-width: 800px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: #ff66c4;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 50px;
+  padding-left: 40px;
+  animation: slideUp 1s ease-out forwards;
+  opacity: 0;
+}
+
+.timeline-item.education .timeline-dot {
+  background: #66ccff;
+}
+
+.timeline-item.experience .timeline-dot {
+  background: #ff66c4;
+}
+
+.timeline-dot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  position: absolute;
+  left: 10px;
+  top: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #1a1a2e;
+  color: #fff;
+  border: 2px solid #ff66c4;
+  box-shadow: 0 0 10px #ff66c4;
+  animation: pulse 2s infinite;
+}
+
+.timeline-content h3 {
+  margin: 0;
+  font-size: 22px;
+  color: #ffffff;
+}
+
+.timeline-content h4 {
+  margin: 5px 0;
+  font-size: 18px;
+  color: #cccccc;
+}
+
+.timeline-date {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.timeline-content p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ddd;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.3); opacity: 0.7; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.download-resume-btn {
+  display: inline-block;
+  margin: 30px auto 0;
+  padding: 12px 24px;
+  font-size: 16px;
+  background: #ff66c4;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px #ff66c4;
+  text-align: center;
+}
+
+/* Centering wrapper */
+.resume-section {
+  text-align: center;
+}
+
+.download-resume-btn:hover {
+  background: #ffffff;
+  color: #ff66c4;
+  box-shadow: 0 0 25px #ff66c4;
+  transform: scale(1.05);
+}
+

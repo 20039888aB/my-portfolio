@@ -1,0 +1,19 @@
+/* src/components/SocialLinks.css */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px 0;
+  background-color: #0a0a0a;
+}
+
+.social-links a {
+  color: #00ffcc;
+  font-size: 24px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-links a:hover {
+  color: hotpink;
+  transform: scale(1.2);
+}
