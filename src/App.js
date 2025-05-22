@@ -30,7 +30,7 @@ function App() {
       setUser(currentUser);
     });
     return () => unsubscribe();
-  }, []);
+  }, [auth]);
 
   return (
     <Router>
