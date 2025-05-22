@@ -1,7 +1,7 @@
 // src/firebase.js
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
-import { getAnalytics } from "firebase/analytics";
+//import { getAnalytics } from "firebase/analytics";
 import { getAuth, setPersistence, browserLocalPersistence } from "firebase/auth";   
 
 const firebaseConfig = {
